@@ -1,5 +1,5 @@
 
-## **BREAST CANCER CLASSIFICATION**
+## **CREDIT CARD FRAUD DETECTION**
 
 **Problem Statement**:
 * The primary objective of this problem is to develop an accurate and efficient credit card fraud detection system that can distinguish between legitimate and fraudulent transactions in real-time.
