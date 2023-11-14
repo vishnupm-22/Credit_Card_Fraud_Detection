@@ -3,13 +3,11 @@
 problem statement:
 * The primary objective of this problem is to develop an accurate and efficient credit card fraud detection system that can distinguish between legitimate and fraudulent transactions in real-time.
 
-
-Steps :
+**Steps** :
 * Understanding the data
 * EDA
 * Handling Imbalanced dataset 
 * Model Building and Evaluation
-
 
 **The dataset contains transactions made by credit card users in 2 days**.
  * It contains only numerical input variables which are the result of a PCA transformation.Features V1, V2, … V28 are the principal components obtained with PCA .
@@ -25,12 +23,9 @@ Steps :
    * Average amount value of fraud transactions in both the days are significantly high as compared to legit transactions.
    * Dist plot : shows that it is right skewed distribution for both transactions.
 
- 
+ Handled Imbalanced dataset using Under-Sampling technique to address the issue of Biased Model & Overfitting.
 
-Handled Imbalanced dataset using Under-Sampling technique to address the issue of Biased Model & Overfitting.
-
-
-Model Building and Evaluation:
+**Model Building and Evaluation**:
  * Created a pipeline which is a series of data preprocessing steps and models chained together in a specific sequence
  * Preprocessing steps include Normalization technique such as  Robust Scaling which handles outliers.
  * Implemented Multiple Models such as LogisticRegression,SVM &RandomForestClassifier and also evaluated these models by Precision , recall & F1 score.
