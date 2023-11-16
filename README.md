@@ -10,19 +10,20 @@
 * Handling Imbalanced dataset 
 * Model Building and Evaluation
 
-**The dataset contains transactions made by credit card users in 2 days**.
+**The dataset contains transactions made by the credit card users in 2 days**.
  * It contains only numerical input variables which are the result of a PCA transformation.Features V1, V2, … V28 are the principal components obtained with PCA .
- * Time and Amount are the features that are not transformed by PCA.
+ * Time and Amount are the only features that are not transformed by PCA.
 
 **Did exploratory data analysis to gain some insights on data**:
- * **Class distribution**: bar and pie plot shows that data is highly Imbalanced.
- * **Feature distribution** : from heat map ,wrt to target column v17,v14,v11 are highly correlated .Visualizing the distribution plots of V17,V14,V11 shows thatthese feature have minimal overlap which significantly helps in classifying the fraud and legit transactions. 
+ * **Class distribution**: plotted bar and pie plot to show that data is highly Imbalanced.
+ * **Correlation Analysis** : plotted heat map : features like v17,v14,v11 are highly correlated with target column .
+ * **Feature distribution** : plotted dist plot to show that these features are significant in classification of legit and fraud.
  * **time-based analysis** :
     * From both dist plot and hourly-based transactions plot  we can observe the peak hours.
     * daily basis transactions : Unfortunately as data contains only  transactions of 2 days ,there is no much significant difference in No of fraud transactions in 2 days.
 * **amount based analysis**:
    * Average amount value of fraud transactions in both the days are significantly high as compared to legit transactions.
-   * Dist plot : shows that it is right skewed distribution for both transactions.
+   * Dist plot : right skewed distribution for both transactions.
 
  Handled Imbalanced dataset using Under-Sampling technique to address the issue of Biased Model & Overfitting.
 
@@ -31,6 +32,6 @@
  * Preprocessing steps include Normalization technique such as  Robust Scaling which handles outliers.
  * Implemented Multiple Models such as LogisticRegression,SVM &RandomForestClassifier and also evaluated these models by Precision , recall & F1 score.
  * cross-validation of these scores provides a more robust estimate of the model's performance.
- * RFC performes with an accuracy: ,Precision: ,F1 : 
+ * RFC performes better  with an avg scores of : accuracy:0.93 ,Precision:0.97,F1 :0.92,recall : 0.90 
 
 
