@@ -10,6 +10,8 @@
 * Handling Imbalanced dataset 
 * Model Building and Evaluation
 
+**You can find the dataset from below link** :  [credit_card_dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+
 **The dataset contains transactions made by the credit card users in 2 days**.
  * It contains only numerical input variables which are the result of a PCA transformation.Features V1, V2, … V28 are the principal components obtained with PCA .
  * Time and Amount are the only features that are not transformed by PCA.
